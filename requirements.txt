@@ -1,0 +1,10 @@
+nltk
+numpy
+pandas
+fastapi
+uvicorn
+aiofiles
+matplotlib
+altair
+wordcloud
+sklearn

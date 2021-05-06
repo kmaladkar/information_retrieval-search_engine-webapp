@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="frontend.css">
+        <title>TASTY CORPUS</title>
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Tangerine">
+      </head>
+    <body>
+        <h1 class="maintext">
+            TASTY CORPUS
+        </h1>
+        <div class="image123" style="text-align: center;">
+            <div class="imgContainer">
+                <img src="https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/ingredients.png?token=AAAARJAI3XM3GAAV4D35P3TAL5WPA" height=100px width=110px/>
+                <img class="middle-img" src="https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/cooking.png?token=AAAARJHH7MH2IUW5FTYRT2TAL5WQM"/ height=100px width=110px/>
+                <img src="https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/baking.png?token=AAAARJCRL3Z7MBU5ZERGZ63AL5WRI"/ height=100px width=110px/>
+            </div>
+        </div>
+        <br>
+        <div class="description">
+            <h2 class="description-header">About our Project</h2>
+            <p > by Kishan Maladkar, Xiangwen Zheng, Ruli Setiawati, Yuqing Zhang</p>
+            <hr>
+            <p class="description-text">Inspired by our love for food and cooking, we collected recipes from <a href="https://tasty.co/">Tasty website</a>. The elements we scraped include recipe title, description, ingredients, and preparation steps. We collected around 2000 recipes. 
+                However, due to limited budget, we were only able to annotate 800 of them. 
+                Our annotations are divided into five categories: Appetizer/side-dish, Main course, Dessert, Drinks, and Other. To explore more, please feel free to play around with our page by searching ingredients or food related key words and filter your search result using the drop down menu. Curious how we used our annotated data for predicting food category? please check out our Machine Learning page. 
+            </p>
+        </div>
+        
+        <div class="button-container">
+            <button id="data">Data Visualization</button>
+            <button id="project">Project Description </button>
+            <button id="machine"><a href="machine.html" target="_blank" >Machine Learning </a></button>
+        </div>
+        
+        <hr>
+        <form class="filter" action="/pos/" id="form">
+            
+            <select id="category" name="category">
+                <option value="all">all</option>
+                <option value="dessert">Dessert</option>
+                <option value="appetizer_or_side_dish">Appetizer or side dish</option>
+                <option value="main_course">Main course</option>
+                <option value="drinks">Drinks</option>
+                <option value="others">Others</option>
+            </select>
+
+            <input class="search" type="input" name = "search">
+            <!-- <input name="submit" type="submit"> -->
+            <!-- <input class="submit" name="submit" type="submit" onclick="update_page()"> -->
+            <button type="button" onclick="update_page()"> Submit </button>
+            <br>
+        </form>
+        <div  class="maintext" id="maintext">
+            <!--Hello world!-->
+        </div> 
+        <div id="popup1" class="popup1">
+            <span id="close1">x</span>
+            <br>
+            <b>Corpus Statistics Based on Categories</b>
+            <br>
+            <img src = "https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/corpus_stat.png?token=AAAARJGIRM2CY66LXPT3QF3AL5XCM"/>
+            <br>
+            <b>Appetizer/side-dish</b>
+            <br>
+            <br><img src = "https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/appies.png?token=AAAARJBGOUASCDVDUV5XHRDAL5XCQ"/><br>
+            <br>
+            <b>Main course</b>
+            <br>
+            <br><img src = "https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/main_course.png?token=AAAARJB6VSSL5HYCDQ62Q6DAL5XCU"/><br>
+            <br>
+            <b>Dessert</b></body>
+            <br>
+            <br><img src = "https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/dessert.png?token=AAAARJFRZN4KDVENYTT24KLAL5XCY"/><br>
+        </div>
+        <div id="popup3" class="popup1">
+            <span id="close3">✕</span>
+            <div style="text-align: center;">
+                <img src = "https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/recipe.png?token=AAAARJBSJABZC4RH4AJ5KPDAL5XC4" width = 100px height= 110px/>
+            </div>
+            <p>Inspired by our love for food and cooking, we collected recipes from <a href="https://tasty.co/">Tasty website</a>. The elements we scraped include recipe title, description, ingredients, and preparation steps. We collected around 2000 recipes. However, due to limited budget, we were only able to annotate 800 of them. Our annotations are divided into five categories: Appetizer/side-dish, Main course, Dessert, Drinks, and Other.
+                <br> 
+                <br>We used Amazon Mechanical Turk annotate the recipes  based on tge categeries and for each recipe, we assign it to three different workers. Then, we extracted the best annotation if two annotators agree on one category. We investigated the inter-annotator agreement and we chose to use Krippendorff’s phi and alpha here because we have five categories(Appetizers/Side dish, Main course, Dessert, Drinks and Other). Based on Krippendorff’s alpha result, the observed disagreement is high (57.375%). The alpha is around 0.42, below the lowest conceivable limit (0.667), and falls into the range of (0.41, 0.6) as being moderate.
+                <br> 
+                <br>We think that this project has a lot of future possible developments. One of the possible developments is that we can add more models in addition to existing machine learning model so that we can compare performances of different models. 
+                Another idea for future work is that we can extract ingredients of these recipes that commonly triggers allergy and have a column that shows potential allergy warnings for the recipes. 
+                Lastly, we can develop a calorie counter and have a feature where users can filter recipes based on the calories.
+                <br> 
+                <br><i>We would like to thank our mentor, Jungyeul Park, for his advice and guidance throughout this project.</i>
+                </p>
+        </div>
+
+        <!-- =========================================================================== -->
+       
+        <script language="javascript" type="text/javascript" src="frontend.js"> </script>	
+</html>

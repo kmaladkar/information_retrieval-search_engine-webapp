@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="frontend.css">
+        <title>Tasty Annotation</title>	
+    </head>
+
+    <body>
+        <h1 class="maintext">Machine Learning</h1>
+
+        <div class="image123" style="text-align: center;">
+            <div class="imgContainer">
+                <img src="https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/ingredients.png?token=AAAARJAI3XM3GAAV4D35P3TAL5WPA" height=100px width=110px/>
+                <img class="middle-img" src="https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/cooking.png?token=AAAARJHH7MH2IUW5FTYRT2TAL5WQM"/ height=100px width=110px/>
+                <img src="https://raw.github.ubc.ca/piggyeq/COLX_523_Project/master/milestone4/img/baking.png?token=AAAARJCRL3Z7MBU5ZERGZ63AL5WRI"/ height=100px width=110px/>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button><a href="frontend.html"> Home </a></button>
+            <!-- <button><a href="frontend.html"> Data Visualization </a></button> -->
+            <!--<button>Word Cloud</button> -->
+            <!-- <button>Project Introduction </button> -->
+        </div>
+
+        <div class = "model-input">
+        <h2 class="input-header">Input recipes here: </h2>
+
+        <form class="recipe-input" action="/classify/" id="form2">
+            <textarea class="search" type="input" name = "search"></textarea>
+
+            <label for="model">pick a model:</label>
+
+            <select id="model" name="category">
+                <option value="all">Linear SVC</option>
+
+            </select>
+            <!-- <input class="submit" type="submit"> -->
+            <button type="button" onclick="machine_page()"> Submit </button>
+        </form>
+        </div>
+        <div  class="maintext" id="maintext">
+           
+        </div> 
+    </body>
+    <script language="javascript" type="text/javascript" src="frontend.js"> </script>	
+</html>

@@ -1,0 +1,143 @@
+body{
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: url("food4.png"); */
+}
+
+.imgContainer{
+    text-align: center;
+    vertical-align: middle;
+    padding
+}
+.sidebar {
+    float:center;
+    width:25%;
+
+}
+
+.maintext {
+    font-family: "Balthazar";
+    font-size: 40px; 
+    padding: 20px 0;
+    padding-top: 20px;
+    text-align: center;
+    color:rgb(1, 3, 1);
+}
+
+.even {
+	background-color: rgb(247, 233, 205);
+}
+/* description ====================== */
+.description{
+    background: rgb(247, 233, 205);
+    padding: 20px;
+    margin: 50px;
+    border:1px rgb(15, 14, 14) solid;
+}
+.description-header{  
+}
+
+.description-text{
+
+}
+/* buttons ======================================== */
+.button-container{
+    margin: 0 auto;
+    width:fit-content;
+}
+.button-container button{
+    margin:10px;
+    padding:10px;
+    color:rgba(6, 7, 7, 0.836);
+    background: rgba(173, 216, 230, 0.212);
+    border-radius: 5px;
+    font-weight: bold;
+    border:1px rgb(61, 61, 61) solid;
+}
+.button-container button a{
+    color:rgba(6, 7, 7, 0.836);
+    text-decoration: none;
+}
+.filter{
+
+    margin:30px auto;
+    width: fit-content;
+}
+#category{
+    padding:7px;
+}
+.submit{
+    padding:7px;
+    border:1px lightgray solid;
+    color:rgba(6, 7, 7, 0.836);
+
+}
+.search{
+    padding:7px;
+
+}
+.popup1{
+    display: none;
+    position: absolute;
+    top:10vh;
+    left:50vw;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    border:1px lightgray solid;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
+    background: rgb(255, 251, 243);
+    width: 80vw;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+.popup1 span{
+    float: right;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+.popup1 span:hover{
+    cursor: pointer;
+    color: red;
+}
+.popup1 p{
+    padding-top: 30px;
+    text-align: center;
+}
+.popup1 img{
+    margin: 0 auto;
+}
+
+
+/* machine page==================================================== */
+.input-header{
+    padding-left: 20px;
+
+}
+.recipe-input{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.recipe-input input{
+    margin: 10px 0;
+    width: 30%;
+}
+.recipe-input label{
+    margin-top: 15px;
+}
+.recipe-input textarea{
+    height: 100px;
+}
+#model{
+    width: 30%;
+    margin: 10px 0;
+    padding: 7px;
+    float: left;
+}
+
+.model-input{
+    margin: 0 auto;
+    width: fit-content;
+}
