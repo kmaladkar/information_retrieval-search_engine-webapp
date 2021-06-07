@@ -1,5 +1,5 @@
 
-# Data Scource
+# Data Source
 
 We collected recipes from [Tasty website](https://tasty.co/). The elements we scraped include recipe title, description, ingredients, and preparation steps. We collected around 2000 recipes. However, due to limited budget, we were only able to annotate 800 of them. Our annotations are divided into five categories: Appetizer/side-dish, Main course, Dessert, Drinks, and others. To explore more, please feel free to play around with our page by searching ingredients or food related key words and filter your search result using the drop down menu. Curious how we used our annotated data for predicting food category? please check out our Machine Learning page. 
 
